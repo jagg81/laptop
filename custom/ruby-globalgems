@@ -1,0 +1,11 @@
+echo "Installing Bundler for managing Ruby libraries ..."
+  gem install bundler
+
+echo "Installing Awesome Print for pretty printing to IRB ..."
+  gem install awesome_print
+
+echo "Installing GIT UI ..."
+  gem install git-ui
+
+echo "Installing CURB (Curl gem) ..."
+  gem install curb
