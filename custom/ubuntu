@@ -11,7 +11,16 @@ echo "Using apt-get to install OS packages so let's update it first ..."
   sudo apt-get update -y
 
 echo "Installing OS packages. You will be prompted for your password ..."
-  sudo apt-get install build-essential bison openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev -y
+  sudo apt-get install build-essential bison openssl libreadline6 libreadline6-dev curl git git-gui zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev -y
+
+echo "Git repository browser (Tig)..."
+  sudo apt-get install tig -y
+
+echo "Some basic Text Editors..."
+  sudo apt-get install vim emacs -y
+
+echo "IRC client (IRSSI)..."
+  sudo apt-get install irssi -y
 
 echo "Install Postgres, a great open source relational database ..."
   sudo apt-get install libpq5 libpq-dev postgresql -y
